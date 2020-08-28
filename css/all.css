@@ -1,0 +1,105 @@
+* {
+    padding:0;
+    margin:0;
+}
+body{ 
+    background:#D8E7FA;
+}
+ul,ol {
+    list-style-type:none;
+}
+img{
+    display:block;
+}
+#wrap{
+    width:400px;
+    margin:100px auto;
+    border:1px solid gray;
+    height:480px;
+}
+#magnify{
+    width:400px;
+    height:400px;
+    position:relative;
+    margin-bottom:15px;
+}
+#magnify .simg{ 
+    width:400px;
+    height:400px;
+    position:relative;
+}
+#magnify .simg img[src="../images/sprite-magnify.png"]{
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+#magnify .simg .mov{
+    width:150px;
+    height:149px;
+    background:url("../images/move.png");
+    position:absolute;
+    left:0px;
+    top:0;
+    cursor:move;
+    display:none;
+}
+#magnify .bigimg {
+    width:400px;
+    height:400px;
+    position:absolute;
+    left:400px;
+    bottom:0;
+    overflow:hidden;
+    display:none;
+}
+#magnify .bigimg img{
+    position:absolute;
+    left:0px;
+    top:0;
+}
+.series {
+    width:400px;
+    height:55px;
+    position:relative;
+}
+.series .show {
+    width:400px;
+    height:55px;
+    position:relative;
+    overflow:hidden;
+}
+.series .show ul.cont{
+    width:400px;
+}
+.series .show ul.cont li{
+    float:left;
+    margin:0px 6px;
+    cursor:pointer;
+    border:2px solid transparent;
+}
+.series .show ul.cont li.hover{
+    border:2px solid red;
+}
+.series span{
+    width:20px;
+    height:70px;
+    position:absolute;
+    background-image:url("../images/hd_sprite_v1.0.png");
+    cursor:pointer;
+}
+.series span.left{
+    left:0;
+    top:0;
+    background-position:-142px -18px;
+}
+.series span.right{
+    right:0;
+    top:0;
+    background-position:-172px -18px;
+}
+.series span.left:hover{
+    background-position:-138px -130px;
+}
+.series span.right:hover{
+    background-position:-175px -130px;
+}
